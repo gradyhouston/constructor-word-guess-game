@@ -20,11 +20,11 @@ var Letter = function(character) {
 			console.log(this.character);
 		}
 		else {
-			//console.log ("_");
+			// console.log ("_");
 		}
 
 	}
 }
 
 //export Letter constructor so that Word.js can use it.
-module.exports = Letter
+module.exports = Letter;

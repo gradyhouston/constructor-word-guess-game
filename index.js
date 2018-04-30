@@ -19,6 +19,8 @@ const boxen = require('boxen');
 //npm package for coloring the CLI text
 const chalk = require('chalk');
 
+const supportsColor = require('supports-color');
+
 //Pre-defined color for incorrect guess.
 var incorrect = chalk.bold.red;
 
@@ -26,13 +28,13 @@ var incorrect = chalk.bold.red;
 var correct = chalk.green.bold;
 
 //pre-defined color for regular game text.
-var gameTextColor = chalk.black;
+var gameTextColor = chalk.blue;
 
 //Pre-defined color for other game texts.
 var altGameTextColor = chalk.blue.bold;
 
 
-var wordToGuess = chalk.black.underline;
+var wordToGuess = chalk.blueBright.underline;
 
 
 var youGuessed = chalk.magenta.bold;
@@ -280,7 +282,7 @@ figlet("Word Guessing Game", function(err, data) {
     //Game instructions.
     var howToPlay =
     "==========================================================================================================" + "\r\n" +
-    "How to play" + "\r\n" +
+    "How to play" + "\r\n" + "*NOTE* If your terminal is themed, you may not see some of the colors in the CLI properly." + "\r\n" +
     "==========================================================================================================" + "\r\n" +
     "* When prompted to enter a letter, press any letter (a-z) on the keyboard to guess a letter." + "\r\n" +
     "* If incorrect, the letter you guessed does not appear in the word." + "\r\n" +

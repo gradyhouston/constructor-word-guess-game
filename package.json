@@ -22,6 +22,7 @@
     "cli-color": "^1.2.0",
     "figlet": "^1.2.0",
     "inquirer": "^5.1.0",
-    "is-letter": "^1.1.1"
+    "is-letter": "^1.1.1",
+    "supports-color": "^5.4.0"
   }
 }
